@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    form {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid black; /* Remove default border */
+        border-radius: 4px;
+        box-sizing: border-box;        
+        
+    }
+
+    input[type="text"].icon,
+    input[type="email"].icon,
+    input[type="tel"].icon,
+    input[type="password"].icon {
+        padding-left: 40px;
+        border: 1px solid black; 
+    }
+
+    .icon {
+        background-position: 10px center;
+        background-repeat: no-repeat;
+        background-size: 20px;
+    }
+
+    .icon-name {
+        background-image: url('https://www.svgrepo.com/show/525592/user.svg');
+    }
+
+    .icon-email {
+        background-image: url('https://www.svgrepo.com/show/447356/email.svg');
+    }
+
+    .icon-phone {
+        background-image: url('https://www.svgrepo.com/show/526086/phone.svg');
+    }
+
+    .icon-password {
+        background-image: url('https://www.svgrepo.com/show/438726/padlock.svg');
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+<form>
+    <input type="text" class="icon icon-name" placeholder="Name">
+    <input type="email" class="icon icon-email" placeholder="Email ID">
+    <input type="tel" class="icon icon-phone" placeholder="Phone">
+    <input type="password" class="icon icon-password" placeholder="Set Password">
+    <input type="submit" value="REGISTER">
+</form>
+</body>
+</html>
